@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
 
         EditText dollarField =(EditText) findViewById(R.id.dollarField);
 
+        //This is a second commit
+        int test = 5 + 4;
+        
         double dollarAmount= Double.parseDouble(dollarField.getText().toString());
 
         Double poundAmount= dollarAmount*0.65;
@@ -26,5 +29,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+    
+    
+    public void swap(int one, int two){
+      int temp = one;
+      one = two;
+      two = temp;s
     }
 }
